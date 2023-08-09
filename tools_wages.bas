@@ -42,3 +42,59 @@ Function tdl(sbm)
     End If
     
 End Function
+
+
+
+Function rdv(salbase)
+    
+    If salbase < 50000 Then
+        rdv = 0
+    End If
+    
+    If (salbase > 50000) And (salbase <= 100000) Then
+        rdv = 750
+    End If
+    
+    If (salbase > 100000) And (salbase <= 200000) Then
+        rdv = 1950
+    End If
+    
+    If (salbase > 200000) And (salbase <= 300000) Then
+        rdv = 3250
+    End If
+    
+    If (salbase > 300000) And (salbase <= 400000) Then
+        rdv = 4550
+    End If
+    
+    If (salbase > 400000) And (salbase <= 500000) Then
+        rdv = 5850
+    End If
+    
+    If (salbase > 500000) And (salbase <= 600000) Then
+        rdv = 7150
+    End If
+    
+    If (salbase > 600000) And (salbase <= 700000) Then
+        rdv = 8450
+    End If
+    
+     If (salbase > 700000) And (salbase <= 800000) Then
+        rdv = 9750
+    End If
+    
+    If (salbase > 800000) And (salbase <= 900000) Then
+        rdv = 11050
+    End If
+    
+    
+    If (salbase > 900000) And (salbase <= 1000000) Then
+        rdv = 12350
+    End If
+    
+    If (salbase > 1000000) Then
+        rdv = 13000
+    End If
+    
+   
+End Function
