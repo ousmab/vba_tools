@@ -98,3 +98,30 @@ Function rdv(salbase)
     
    
 End Function
+
+
+
+Function irpp(ByVal baseIrpp, Optional ByVal salbase)
+   
+    
+   ' si on veut que le test sois fait sur le salbase
+   
+        If salbase <= 62000 Or baseIrpp <= 62000 Then
+            irpp = 0
+            
+        ElseIf baseIrpp <= 166667 Then
+            irpp = baseIrpp * 0.1
+            
+        ElseIf baseIrpp <= 250000 Then
+            irpp = (baseIrpp - 166667) * 0.15 + 16667
+            
+        ElseIf baseIrpp < 416667 Then
+            irpp = (baseIrpp - 250000) * 0.25 + 29167
+            
+        ElseIf baseIrpp > 416667 Then
+            irpp = (baseIrpp - 416667) * 0.35 + 70833
+        End If
+
+    
+    
+End Function
